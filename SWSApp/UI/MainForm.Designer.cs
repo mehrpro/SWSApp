@@ -37,6 +37,8 @@
             this.mnuSMS = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTaradod = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReceiver = new System.Windows.Forms.ToolStripMenuItem();
+            this.راهنماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.دربارهنرمافزارToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +46,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuInformation,
-            this.mnuTaradod});
+            this.mnuTaradod,
+            this.راهنماToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -68,6 +71,7 @@
             this.mnuAcademicYear.Name = "mnuAcademicYear";
             this.mnuAcademicYear.Size = new System.Drawing.Size(180, 22);
             this.mnuAcademicYear.Text = "سال تحصیلی";
+            this.mnuAcademicYear.Click += new System.EventHandler(this.mnuAcademicYear_Click);
             // 
             // mnuSchools
             // 
@@ -104,8 +108,22 @@
             // mnuReceiver
             // 
             this.mnuReceiver.Name = "mnuReceiver";
-            this.mnuReceiver.Size = new System.Drawing.Size(180, 22);
+            this.mnuReceiver.Size = new System.Drawing.Size(144, 22);
             this.mnuReceiver.Text = "تخصیص کارت";
+            // 
+            // راهنماToolStripMenuItem
+            // 
+            this.راهنماToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.دربارهنرمافزارToolStripMenuItem});
+            this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.راهنماToolStripMenuItem.Text = "راهنما";
+            // 
+            // دربارهنرمافزارToolStripMenuItem
+            // 
+            this.دربارهنرمافزارToolStripMenuItem.Name = "دربارهنرمافزارToolStripMenuItem";
+            this.دربارهنرمافزارToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.دربارهنرمافزارToolStripMenuItem.Text = "درباره نرم افزار";
             // 
             // MainForm
             // 
@@ -113,6 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -135,5 +154,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuSMS;
         private System.Windows.Forms.ToolStripMenuItem mnuTaradod;
         private System.Windows.Forms.ToolStripMenuItem mnuReceiver;
+        private System.Windows.Forms.ToolStripMenuItem راهنماToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem دربارهنرمافزارToolStripMenuItem;
     }
 }

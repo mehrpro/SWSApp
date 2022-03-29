@@ -23,7 +23,14 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.23" />
+    <PackageReference Include="PersianTools.Core" Version="2.0.2" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DateTimeSelector">
+      <HintPath>C:\Users\SEO\Desktop\DateTimeSelector.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
